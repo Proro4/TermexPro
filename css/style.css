@@ -788,6 +788,7 @@ textarea {
   color: #f78222;
   text-transform: uppercase;
   line-height: 1.7;
+      height: 45px;
 }
 .slider-info{
   margin: 15px;
@@ -1048,6 +1049,8 @@ margin: 0 auto;
   padding-bottom: 10px;
 }
 .light-info{
+  max-height: 250px;
+  overflow: auto;
   padding-bottom: 10px;
   border-bottom: 1px solid #c4c4c4;
 }
@@ -1078,4 +1081,7 @@ margin: 0 auto;
   top: 10px;
   width:240px;
   text-align: center;
+}
+.info-for-inbox{
+  display: none;
 }

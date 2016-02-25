@@ -103,10 +103,15 @@ $(document).ready(function() {
   var leftLightbox = (_bodyWidth -linghtboxWidth) / 2;
   $('.lightbox-block').css('left', leftLightbox);
   $('.butt-a').on('click',function(){
+    $('.lightbox .lightbox-block').empty();
+    var numbLinght = $(this).closest('.slider-block').attr('ware');
+    var bbb = $('#'+numbLinght+'').html();
+
+     $('.lightbox .lightbox-block').append(bbb);
     $('.lightbox').css('display', 'block');
-  })
   $('.lightbox-exit').on('click',function(){
     $('.lightbox').css('display', 'none');
+  })
   })
 });
 $(window).resize(function(){
@@ -114,5 +119,5 @@ $(window).resize(function(){
   var linghtboxWidth = $('.lightbox-block').width();
   var leftLightbox = (_bodyWidth -linghtboxWidth) / 2;
   $('.lightbox-block').css('left', leftLightbox);
-  
+
 })
