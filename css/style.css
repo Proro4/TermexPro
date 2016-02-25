@@ -281,8 +281,8 @@ input {
   border-bottom: 3px solid rgba(127, 186, 0, 1);
 }
 .poster-wrap {
-  background-color: rgb(115, 53, 8);
-  background-image: url(../img/poster.png);
+     /*background-color: ;*/
+  background-image: url(../img/poster.png),linear-gradient(to right,rgb(20, 20, 29) 50%, rgb(162, 135, 124)50%);
   background-repeat: no-repeat;
   background-position: center top;
   width: 100%;
@@ -981,6 +981,7 @@ margin: 0 auto;
   text-align: center;
   text-transform: uppercase;
   transition:0.5s all;
+  box-shadow: 2px 2px 5px #CFCFCF;
 }
 
 .bottom-left a.bottom-one{

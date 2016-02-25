@@ -109,3 +109,10 @@ $(document).ready(function() {
     $('.lightbox').css('display', 'none');
   })
 });
+$(window).resize(function(){
+  var _bodyWidth = $('body').width();
+  var linghtboxWidth = $('.lightbox-block').width();
+  var leftLightbox = (_bodyWidth -linghtboxWidth) / 2;
+  $('.lightbox-block').css('left', leftLightbox);
+  
+})
