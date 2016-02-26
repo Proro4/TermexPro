@@ -22,21 +22,21 @@
 
       if (_scrollTop > top_show){
          _arrowTop.fadeIn();
-         _buttomLeft.fadeIn();
        }
       else {
         _arrowTop.fadeOut();
-         _buttomLeft.fadeOut();
       }
       if (_scrollTop > headShadow){
          _header.css({'box-shadow':'0px 2px 0px #f78222, 0px 4px 2px #cbcbcb'});
          _MenuLi.css({'padding-bottom':'2px'});
          _headFix.addClass('head-fix');
+         _buttomLeft.fadeIn();
       }
       else{
         _header.css({'box-shadow':'0px 2px 0px transparent'});
          _MenuLi.css({'padding-bottom':'0px'});
          _headFix.removeClass('head-fix');
+         _buttomLeft.fadeOut();
       }
     });
     $('.arrow-top').click(function() {
@@ -77,6 +77,12 @@ $(document).ready(function() {
     items : 3,
     responsive : false,
     lazyLoad : true,
+    navigation : true
+  }); 
+  $("#slider-3").owlCarousel({
+    items : 3,
+    responsive : false,
+    // lazyLoad : true,
     navigation : true
   }); 
     $("#slider-2 ").owlCarousel({

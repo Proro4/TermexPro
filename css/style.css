@@ -758,6 +758,10 @@ textarea {
   margin: 3px;
   text-align: center;
 }
+#slider-3 .item{
+  margin: 3px;
+  text-align: center;
+}
 .slider-container-1#two-tabs{
   display: none;
 }
@@ -982,7 +986,7 @@ margin: 0 auto;
   text-align: center;
   text-transform: uppercase;
   transition:0.5s all;
-  box-shadow: 2px 2px 5px #CFCFCF;
+  box-shadow: 0px 2px 3px #CFCFCF;
 }
 
 .bottom-left a.bottom-one{
@@ -1058,6 +1062,7 @@ margin: 0 auto;
   font-size: 12px;
   color: #262626;
   padding: 4px 0;
+  line-height: 15px;
 }
 
 .light-info p b{
